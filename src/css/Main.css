@@ -1,0 +1,21 @@
+.gallaryBody{
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+      
+  
+}
+body{
+     background-color: #ffffff
+     
+}
+@media screen and (max-width:480px) {
+    .gallaryBody{
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 97%;
+ 
+  
+}
+    
+}
