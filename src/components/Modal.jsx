@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import LocalContext from "../contexts/LocalContext";
 import "../css/Modal.css";
 const Modal = ({ selectedImage, setSelectedImage }) => {
 	const handleClose = (e) => {
@@ -7,9 +8,11 @@ const Modal = ({ selectedImage, setSelectedImage }) => {
 	};
 
 	return (
-		<div className='modalImage' onClick={handleClose}>
-			<img src={selectedImage} />
-		</div>
+		<>
+			<div className='modalImage' onClick={handleClose}>
+				<img src={selectedImage} />
+			</div>
+		</>
 	);
 };
 export default Modal;

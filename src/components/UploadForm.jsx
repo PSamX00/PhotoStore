@@ -4,6 +4,7 @@ import ProgressBar from "./ProgressBar";
 import "../css/uploadForm.css";
 import AddIcon from "@mui/icons-material/Add";
 
+
 const UploadForm = () => {
 	const { fileStore, setFileStore, error, setError } =
 		useContext(LocalContext);
@@ -50,6 +51,7 @@ const UploadForm = () => {
 					className='uploadImage'
 					id='file-upload'
 				/>
+
 				{error && <div className='errorDiv'>{error}</div>}
 				<div>{fileStore && fileStore.name} </div>
 

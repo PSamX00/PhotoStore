@@ -9,6 +9,25 @@ body{
      background-color: #ffffff
      
 }
+
+.panTool{
+    position: fixed;
+    right: 0;
+    color: red;
+    cursor: pointer;
+    animation: 10s animatePan infinite;
+}
+
+@keyframes animatePan {
+    0%{color: red;}
+    25%{color: blue;}
+    50%{color: yellowgreen;}
+    75%{color: aqua;}
+    100%{color: green;}
+    
+}
+
+
 @media screen and (max-width:480px) {
     .gallaryBody{
     margin-left: 50%;
